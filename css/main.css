@@ -1,0 +1,313 @@
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+#popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 500px;
+  height: 300px;
+  margin-left: -250px; /*Half the value of width to center div*/
+  margin-top: -250px; /*Half the value of height to center div*/
+  z-index: 200;
+}
+
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popupcontent {
+  padding: 10px;
+  top: 50px;
+  text-align: center;
+}
+.wrapper .captcha-area{
+  display: flex;
+  height: 66px;
+  margin: 30px 20px 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.captcha-area .captcha-img{
+  height: 10%;
+  width: 345px;
+  user-select: none;
+  position: relative;
+  border-radius: 5px;
+}
+.captcha-img img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  margin-left: 65px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.captcha-img .captacha{
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 10px;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 2px #a9a9a9;
+  font-family: 'Noto Serif', serif;
+}
+#button {
+  cursor: pointer;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+textarea {
+  resize: vertical;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.body {
+  position: relative;
+}
+
+.card-body button {
+  flex: none;
+}
+
+.btn-service {
+  height: 3em;
+  width: 3em;
+  padding: 0.75em;
+}
+
+.body-block {
+  padding: 100px 0;
+}
+
+.body-block:nth-child(2n) {
+  background: #2d3436;
+}
+
+.block-heading {
+  text-align: center;
+  margin: 0 0 3em;
+}
+
+.block-heading p {
+  color: #868e96;
+}
+
+.site-footer {
+  background: #222;
+  color: #fff;
+}
+.site-body {
+  position: relative;
+}
+.site-bottom-bar {
+  background: #000;
+  color: #fff;
+}
+.employee-info {
+  padding: 20px 0;
+}
+
+.employee-info span {
+  color: #868e96;
+  text-transform: uppercase;
+}
+
+#about p {
+  line-height: 2.5;
+}
+
+#features .card {
+  border-radius: 0.5em;
+}
+
+.w-33 {
+  width: 33.33%;
+}
+@media (min-width: 992px) {
+  .flex-basis-none {
+    flex-basis: 0;
+  }
+}
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  margin: 0;
+  height: auto;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+@media only screen and (min-width: 35em) {
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+}
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent;
+    color: #000; 
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
