@@ -1,0 +1,28 @@
+    <div id="overlay"></div>
+    <div id="popup">
+        <div class="popupcontent">
+            <h1>CAPTCHA</h1>
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <script>
+                function onSubmit(token) {
+                    document.getElementById("demo-form").submit();
+                }
+            </script>
+            <div class="captcha-area">
+                <div class="captcha-img">
+                    <img src="captcha-bg.png">
+                    <span class="captacha"></span>
+                </div>
+                <button class="reload-btn">New Image</button>
+            </div>
+            <form action="#" class="input-area">
+                <input type="text" placeholder="Answer" maxlength="6" required>
+                <button class="check-btn">Submit</button>
+            </form>
+            <div class="status-txt"></div>
+        </div>
+
+        <script src="script.js"></script>
+
+        </div>
+    </div>
